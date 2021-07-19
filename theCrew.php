@@ -4,7 +4,7 @@
     require_once "header.php";
     require_once "STAPI.php";
 ?>
-<section class="main">
+<main>
     <?php 
     foreach ($crewMembers as $crewPerson) {
         echo "<article>";
@@ -16,7 +16,7 @@
         echo "</article>";
         }
     ?>
-</section>
+</main>
 
 <?php 
   require_once "footer.php";

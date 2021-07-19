@@ -1,4 +1,4 @@
-<section class="main">
+<main>
     <!-- comandancia flota estelar -->
     <article>
         <figure>
@@ -9,10 +9,10 @@
                 <h4>Comandancia</h4>
             </li>
             <li class="article">
-                <strong>La Flota Estelar</strong> es el servicio de exploración y defensa del espacio profundo mantenido por la <strong>Federación Unida de Planetas</strong>. Sus funciones principales incluyen el avance del conocimiento de la Federación sobre la galaxia y sus habitantes.</p>
+                <strong>La Federación Unida de Planetas</strong> es el servicio de exploración y defensa del espacio profundo mantenido por la <strong>Federación Unida de Planetas</strong>. Sus funciones principales incluyen el avance del conocimiento de la Federación sobre la galaxia y sus habitantes.</p>
             </li>
             <li class="article">
-                <button class="article">Conocer más</button>
+            <button class="article"><a href="federation.php">Conocer más</a></button>
             </li>
         </ul>
     </article>
@@ -41,17 +41,18 @@
         </figure>
         <ul class="article">
             <li class="article">
-                <h4>Flota Estelar</h4>
+                <h4>Naves de la Flota</h4>
             </li>
             <li class="article">
                 La columna vertebral de las operaciones de la Flota Estelar. Estos buques, todos con <strong>capacidad warp</strong>, son capaces de llevar a cabo todos los mandatos del servicio: exploración, defensa, transporte de suministros y recursos y atención médica. </p>
             </li>
             <li class="article">
-                <button class="article">Conocer más</button>
+            <button class="article"><a href="starShips.php">Conocer más</a></button>
             </li>
         </ul>
     </article>
-</section>
+
+</main>
 
 <?php 
   require_once "footer.php";

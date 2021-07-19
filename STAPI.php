@@ -1,23 +1,24 @@
 <?php
+
 /**
  * Este script es un endpoint que devuelve un array de arrays, con información
  * de distintas especies aliens en Star Trek.
  */
 
- $species = array(
-    'Humana',
-    'klingon',
-    'Vulcana',
-    'Betazoide',
-    'Bajoriana',
-    'El-Auriana',
-    'Ferengi',
-    'Q',
-    'Romulana',
- );
+$species = array(
+	'Humana',
+	'klingon',
+	'Vulcana',
+	'Betazoide',
+	'Bajoriana',
+	'El-Auriana',
+	'Ferengi',
+	'Q',
+	'Romulana',
+);
 
- $crewMembers = array(
-   array(
+$crewMembers = array(
+	array(
 		'Nombre:'      => 'Jean Luc Picard',
 		'Puesto:'        => 'Capitán',
 		'Habilidades:' => 'Primero al mando, diplomacia, elegancia.',
@@ -25,7 +26,7 @@
 		'Imagen:'      => 'img/JeanLucPicard.png'
 	),
 
-   array(
+	array(
 		'Nombre:'      => 'William Ricker',
 		'Puesto:'        => 'Primer Oficial',
 		'Habilidades:' => 'Number One, ser el más lindo.',
@@ -33,7 +34,7 @@
 		'Imagen:'      => 'img/WilliamRicker.png'
 	),
 
-   array(
+	array(
 		'Nombre:'      => 'Beverly Crusher',
 		'Puesto:'        => 'Oficial Jefa Medicina',
 		'Habilidades:' => 'Tener el pelo rojo zanahoria.',
@@ -41,7 +42,7 @@
 		'Imagen:'      => 'img/BeverlyCrusher.png'
 	),
 
-   array(
+	array(
 		'Nombre:'      => 'Worf',
 		'Puesto:'        => 'Oficial Jefe Seguridad',
 		'Habilidades:' => 'Ser muy klingon.',
@@ -49,15 +50,15 @@
 		'Imagen:'      => 'img/worf.png'
 	),
 
-   array(
+	array(
 		'Nombre:'      => 'Deanna Troi',
 		'Puesto:'        => 'Comandante Consejera',
 		'Habilidades:' => 'Usar sus poderes de manera conveniente para la trama.',
 		'Descripción:' => 'La raza Betazoide tiene características empáticas que les permiten conocer diversas cosas de las personas que los rodean.',
 		'Imagen:'      => 'img/DeannaTroi.png'
 	),
-   
-   array(
+
+	array(
 		'Nombre:'      => 'Data',
 		'Puesto:'        => 'Teniente Comandante',
 		'Habilidades:' => 'Su lógica es perfecta, pero ansía humanidad.',
@@ -65,7 +66,7 @@
 		'Imagen:'      => 'img/Data.png'
 	),
 
-   array(
+	array(
 		'Nombre:'      => 'Geordi Laforge',
 		'Puesto:'        => 'Comandante Jefe Ingeniería',
 		'Habilidades:' => 'No saber pedirle cosas a la Computadora.',
@@ -73,5 +74,28 @@
 		'Imagen:'      => 'img/GeordiLaforge.png'
 	),
 
- );
- 
+);
+
+$Federation = array(
+	array(
+		'Nombre:'      => 'USS Enterprise',
+		'Tipo:'        => 'Galaxy Class',
+		'Registro:' => 'NCC-1701-D',
+		'Estado:' => 'Destruida',
+		'Imagen:'      => 'img/USS Enterprise (NCC-1701-D).jpg'
+	),
+	array(
+		'Nombre:'      => 'USS Enterprise',
+		'Tipo:'        => 'Constitution-class',
+		'Registro:' => 'NCC-1701',
+		'Estado:' => 'Hundida',
+		'Imagen:'      => 'img/USS Enterprise (NCC-1701).jpg'
+	),
+	array(
+		'Nombre:'      => 'USS Hathaway',
+		'Tipo:'        => 'Constellation-class',
+		'Registro:' => 'NCC-2593',
+		'Estado:' => 'Activa',
+		'Imagen:'      => 'img/USSHathaway.jpg'
+	),
+);

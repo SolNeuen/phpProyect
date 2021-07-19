@@ -3,18 +3,18 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 //me aseguro que el user entró al hacer click en submit
-if (isset($_POST['submit'])){
-    echo "funciona!";
+if (isset($_POST['submit'])) {
+    echo "funciona! <br>";
     $name = $_POST["fullName"];
     $species = $_POST["species"];
     $date_of_birth = $_POST["date_of_birth"];
-    $email= $_POST["email"];
-    $password= $_POST["password"];
-    $passwordRepeat= $_POST["passwordRepeat"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+    $passwordRepeat = $_POST["passwordRepeat"];
 
     //conectar con base de datos
     require_once "dbh.back.php";
-    
+
     //error handler functions
     require_once "functions.back.php";
 
@@ -30,20 +30,13 @@ if (isset($_POST['submit'])){
         exit();
     }
 
-    //si la especie es correcta
-/*     if (invalidSpecies($species) !== false) {
-        header("location: register.php?error=invalidSpecies");
+    //si la fecha de nacimiento es válida y correcta
+    if (invalidAge($date_of_birth) !== false) {
+        header("location: register.php?error=InvalidAge");
         exit();
-    } */
+    }
 
-    //si es +18
-/*     if (invalidAge($date_of_birth) !== false) {
-        header("location: register.php?error=invalidAge");
-        exit();
-    } */
-
-    //si el email es correcto
-    
+    //sielmail es correcto
     if (invalidEmail($email) !== false) {
         header("location: register.php?error=invalidEmail");
         exit();
@@ -61,11 +54,11 @@ if (isset($_POST['submit'])){
     }
 
     //función crear user
-    createUser($connection,$name, $species, $date_of_birth, $email, $password);
+    createUser($connection, $name, $species, $date_of_birth, $email, $password);
+}
 
-} 
 //sino hizo click en submit, lo devuelve a la página de registro.
-else{
+else {
     header("location: register.php");
     exit();
 }

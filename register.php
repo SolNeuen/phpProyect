@@ -55,6 +55,11 @@ if (isset($_GET["error"])) {
     if ($_GET["error"] =="invalidUserName") {
         echo "<p class='wrong'> Escribe correctamente tu nombre.</p>";
     }
+
+    if ($_GET["error"] =="InvalidAge") {
+        echo "<p class='wrong'> Tu fecha d enacimiento es incorrecta, o aún no tienes edad para registrarte.</p>";
+    }
+
     if ($_GET["error"] =="invalidEmail") {
         echo "<p class='wrong'> Escribe correctamente tu email.</p>";
     }

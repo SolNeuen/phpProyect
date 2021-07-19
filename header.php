@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Join the Starfleet</title>
 </head>
 <body>
 <header>
@@ -20,7 +20,6 @@
             <?php 
             
             if (isset($_SESSION["userId"])) {
-                echo "<li><a href='profile.php'>Perfil</a></li>";
                 echo "<li><a href='logout.php'>Cerrar Sesión</a></li>";
             }else{
                 echo "<li><a href='register.php'>¡Enlistate!</a></li>";
